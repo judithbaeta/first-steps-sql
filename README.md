@@ -86,9 +86,9 @@ CREATE TABLE student (
 ```
 
 ### Further Resources and References
-[SQL Compiler](https://www.db-fiddle.com/) and make sure the top tab has "MySQL 5.7".
-[SQLite](https://www.codecademy.com/courses/learn-sql/articles/what-is-sqlite) and [SQLite Data Starter Packs](http://2016.padjo.org/tutorials/sqlite-data-starterpacks/#toc-american-community-survey-1-year-data-for-2015)
-[Cheatsheet](https://www.codecademy.com/learn/learn-sql/modules/learn-sql-manipulation/cheatsheet)
+- [SQL Compiler](https://www.db-fiddle.com/) and make sure the top tab has "MySQL 5.7".
+- [SQLite](https://www.codecademy.com/courses/learn-sql/articles/what-is-sqlite) and [SQLite Data Starter Packs](http://2016.padjo.org/tutorials/sqlite-data-starterpacks/#toc-american-community-survey-1-year-data-for-2015)
+- [Cheatsheet](https://www.codecademy.com/learn/learn-sql/modules/learn-sql-manipulation/cheatsheet)
 
 ----------------------------------------------------------------------------------------------------
 
@@ -208,3 +208,21 @@ SELECT *
 FROM movies
 LIMIT 5;
 ```
+
+### 12- CASE
+To create alias scenarios:
+
+´´´
+SELECT name,
+ CASE
+  WHEN review > 4.5 THEN 'Extraordinary'
+  WHEN review > 4 THEN 'Excellent'
+  WHEN review > 3 THEN 'Good'
+  WHEN review > 2 THEN 'Fair'
+  ELSE 'Poor'
+ END AS 'Review'
+FROM nomnom;
+´´´
+
+### Further Resources
+- [Queries Cheat Sheet](https://www.codecademy.com/learn/learn-sql/modules/learn-sql-queries/cheatsheet)
