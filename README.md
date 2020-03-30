@@ -9,7 +9,7 @@ I'm interested in becoming a data scientist and this should be fun!
 
 -------------------------------------------------------------------------------------------------------
 
-# Project 1 · MANIPULATION
+# Project 1// MANIPULATION
 
 ### 1 - CREATE TABLE
 The 'CREATE TABLE' statement creates a new table in a database. It allows one to specify the name of the table and the name of each column in the table.
@@ -79,6 +79,9 @@ CREATE TABLE student (
   age INTEGER DEFAULT 10
 );
 ```
+
+### Further Resources
+[SQL Compiler](https://www.db-fiddle.com/) and make sure the top tab has "MySQL 5.7".
 
 ----------------------------------------------------------------------------------------------------
 
