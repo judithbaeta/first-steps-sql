@@ -210,7 +210,7 @@ LIMIT 5;
 ```
 
 ### 12- CASE
-To create alias scenarios:
+To create a new column. In this case we are creating a new rating system. Don’t forget to rename the new column!
 
 ´´´
 SELECT name,
