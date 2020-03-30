@@ -21,6 +21,11 @@ The 'CREATE TABLE' statement creates a new table in a database. It allows one to
   column3 datatype
 );
 ```
+valid data types:
+1. 'INTEGER' a whole number
+2. 'TEXT' a text string
+3. 'DATE' a date (format is YYYY-MM-DD)
+4. 'REAL' a decimal number
 
 ### 2- INSERT
 The 'INSERT INTO' statement is used to add a new record (row) to a table.
@@ -82,6 +87,7 @@ CREATE TABLE student (
 
 ### Further Resources
 [SQL Compiler](https://www.db-fiddle.com/) and make sure the top tab has "MySQL 5.7".
+[SQLite](https://www.codecademy.com/courses/learn-sql/articles/what-is-sqlite)
 
 ----------------------------------------------------------------------------------------------------
 
