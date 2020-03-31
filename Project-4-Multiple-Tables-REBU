@@ -1,0 +1,100 @@
+### Multiple Tables with REBU
+
+--- Suppose you are a data analyst at REBU, a ridesharing platform. For a project, you were given three tables.
+
+SELECT * FROM trips;
+
+SELECT * FROM riders;
+
+SELECT * FROM cars;
+
+1. ```trips``` - trips information
+  - id - trip ID (```PRIMARY KEY```)
+  - date - trip date
+  - pickup - pickup time stamp
+  - dropoff - drop-off time stamp
+  - rider_id - user ID-
+  - car_id - car ID
+  - type - type of trip (X, POOL, XL)
+  - cost - trip cost
+
+2. ```riders``` - users data
+  - id - user ID (```PRIMARY KEY```)
+  - first - user first name
+  - last - user last name
+  - username - user handle
+  - rating - user average rating
+  - total_trips - total rides ridden
+  - referred - referred by (user ID)
+
+3. ```cars``` - autonomous cars
+  - id - car ID (```PRIMARY KEY```)
+  - model - car model
+  - OS - operating system
+  - status - active or maintenance
+  - trips_completed - total trips completed
+
+--------------------------------------------------------------------
+
+--- Cross join between riders and cars.
+SELECT riders.username, cars.id 
+FROM riders
+CROSS JOIN cars;
+
+SELECT riders.first, riders.last, cars.model
+FROM riders, cars;
+
+--- Suppose we want to create a Trip Log with the trips and its users.
+SELECT *
+FROM trips
+LEFT JOIN riders
+  ON trips.rider_id = riders.id;
+  
+  --- Suppose, we only want certain columns:
+  SELECT trips.date, 
+   trips.pickup, 
+   trips.dropoff, 
+   trips.type, 
+   trips.cost,
+   riders.first, 
+   riders.last,
+   riders.username
+FROM trips
+LEFT JOIN riders 
+  ON trips.rider_id = riders.id;
+  
+--- Now we want to create a link between the trips and the cars used during those trips.
+SELECT *
+FROM trips
+JOIN cars
+  ON trips.car_id = cars.id;
+  
+--- There are three new users this month. Stack the riders table on top of the new table named riders2.
+SELECT *
+FROM riders
+UNION
+SELECT *
+FROM riders2;
+
+--- What is the average cost for a trip?
+SELECT ROUND(AVG(cost), 2)
+FROM trips;
+--- The average cost of a trip is 31.92
+
+--- REBU is looking to do an email campaign for all the irregular users. Find all the riders who have used REBU less than 500 times!
+SELECT username, total_trips
+FROM riders
+WHERE total_trips < 500;
+--- Only 2 riders have completed less than 500 trips
+
+--- Calculate the number of cars that are active.
+SELECT COUNT(*)
+FROM cars
+WHERE status = 'active';
+--- There are three cars currentily active.
+
+--- It’s safety recall time for cars that have been on the road for a while. Write a query that finds the two cars that have the highest trips_completed.
+SELECT *
+FROM cars
+ORDER BY trips_completed DESC
+LIMIT 2;
