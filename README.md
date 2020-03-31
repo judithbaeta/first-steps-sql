@@ -330,7 +330,7 @@ HAVING COUNT(*) > 5;
 
 ### References
 - [Aggregate Fucntions Cheat Sheet](https://www.codecademy.com/learn/learn-sql/modules/learn-sql-aggregate-functions/cheatsheet)
-- Project 3
+- [Project 3](https://github.com/judithbaeta/first-steps-sql/blob/master/project%203-%20trends-in-startups)
 
 -----------------------------------------------------------------------------------------------------------
 
