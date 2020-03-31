@@ -17,7 +17,7 @@ countries (incl.
   - country_id
  )
  
- My gist is [here](https://gist.github.com/c2599fea8ef9f4cfc13be217ef69fccb)
+ My gist is here: https://gist.github.com/dbf37d55b63cb5f5a3faac59d3746b7f
 
 -------------------------------------------------------------------------------------------------
 
@@ -112,7 +112,7 @@ JOIN population_years
 WHERE countries.continent = 'South America' AND population_years.year = 2003;
 
 --- What country had the smallest population in 2007?
-SELECT country.name, country.continent, MIN(population_years.population)
+SELECT countries.name, countries.continent, MIN(population_years.population)
 FROM countries
 JOIN population_years
   ON countries.id = population_years.country_id
