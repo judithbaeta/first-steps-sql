@@ -226,3 +226,90 @@ FROM nomnom;
 
 ### Further Resources
 - [Queries Cheat Sheet](https://www.codecademy.com/learn/learn-sql/modules/learn-sql-queries/cheatsheet)
+
+-----------------------------------------------------------------------------------------------------------
+
+## Project 3 AGGREGATE FUNCTIONS
+
+Aggregate functions perform a calculation on a set of values and return a single value.
+
+### 1- Column References
+The ```GROUP BY``` and ```ORDER BY``` clauses can reference the selected columns by number in which they appear in the SELECT statement. The example query will count the number of movies per rating, and will:
+
+- ```GROUP BY``` column ```2```` (```rating```)
+- ```ORDER BY``` column ```1``` (```total_movies```)
+
+```
+SELECT COUNT(*) AS 'total_movies', 
+   rating 
+FROM movies 
+GROUP BY 2 
+ORDER BY 1;
+```
+
+### 2- SUM() Aggregate Function
+The ```SUM()``` aggregate function takes the name of a column as an argument and returns the sum of all the value in that column.
+
+```
+SELECT SUM(salary)
+FROM salary_disbursement;
+```
+
+### 3- MAX() Aggregate Function
+The ```MAX()``` aggregate function in SQL takes the name of a column as an argument and returns the largest value in a column.
+
+```
+SELECT MAX(amount) 
+FROM transactions;
+```
+
+
+### 4- MIN() Aggregate Function
+The ```MIN()``` aggregate function in SQL returns the smallest value in a column. For instance, to find the smallest value of the amount column from the table named transactions, the given query can be used.
+
+```
+SELECT MIN(amount) 
+FROM transactions;
+```
+
+### 5- COUNT() Aggregate Function
+The ```COUNT()``` aggregate function in SQL returns the total number of rows that match the specified criteria. **Note:** A column name of the table can also be used instead of ```*```. Unlike ```COUNT(*)```, this variation ```COUNT(column)``` will not count NULL values in that column.
+
+```
+SELECT COUNT(*)
+FROM employees
+WHERE experience < 5;
+```
+
+### 6- AVG() Aggregate Function
+The ```AVG()´´´ aggregate function returns the average value in a column.
+
+```
+SELECT AVG(salary)
+FROM employees
+WHERE experience < 5;
+```
+
+### 7- GROUP BY Clause
+The ```GROUP BY``` clause will group records in a result set by identical values in one or more columns. It is often used in combination with aggregate functions to query information of similar records. The ```GROUP BY``` clause can come after ```FROM``` or ```WHERE``` but must come before any ```ORDER BY``` or ```LIMIT``` clause.
+
+```
+SELECT rating, 
+   COUNT(*) 
+FROM movies 
+GROUP BY rating;
+```
+
+### 8- ROUND() Function
+The ```ROUND()``` function will round a number value to a specified number of places. It takes two arguments: a number, and a number of decimal places. It can be combined with other aggregate functions, as shown in the given query. 
+
+```
+SELECT year, 
+   ROUND(AVG(rating), 2) 
+FROM movies 
+WHERE year = 2015;
+```
+
+### References
+- [Aggregate Fucntions Cheat Sheet](https://www.codecademy.com/learn/learn-sql/modules/learn-sql-aggregate-functions/cheatsheet)
+- Project 3
