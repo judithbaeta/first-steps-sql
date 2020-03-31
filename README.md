@@ -7,6 +7,12 @@ Judith here, I have been wanting to learn programming for a while and now that I
 
 I'm interested in becoming a data scientist and this should be fun!
 
+I'm currently completing the [Learn SQL course form Codeacademy](https://www.codecademy.com/learn/learn-sql) and it has really good resources to get started. It divides the coursework in four main lessons as follow:
+1. Manipulation
+2. Queries
+3. Aggregate Functions
+4. Multiple Tables
+
 -------------------------------------------------------------------------------------------------------
 
 ## Project 1// MANIPULATION
