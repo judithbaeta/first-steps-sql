@@ -374,7 +374,7 @@ CROSS JOIN pants;
 ```
 
 ### 4- UNION Clause
-The ```UNION``` clause is used to combine results that appear from multiple ```SELECT``` statements and filter duplicates.
+The ```UNION``` clause is used to combine results that appear from multiple ```SELECT``` statements and filter duplicates. In short, it allows us to stack one dataset on top of another.
 
 *For example, given a first_names table with a column name containing rows of data “James” and “Hermione”, and a last_names table with a column name containing rows of data “James”, “Hermione” and “Cassidy”, the result of this query would contain three names: “Cassidy”, “James”, and “Hermione”.
 
