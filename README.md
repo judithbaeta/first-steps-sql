@@ -309,6 +309,16 @@ SELECT year,
 FROM movies 
 WHERE year = 2015;
 ```
+### 9- HAVING Clause
+The ```HAVING``` clause is used to further filter the result set groups provided by the GROUP BY clause. ```HAVING``` is often used with aggregate functions to filter the result set groups based on an aggregate property. The given query will select only the records (rows) from only years where more than 5 movies were released per year.
+
+```
+SELECT year, 
+   COUNT(*) 
+FROM movies 
+GROUP BY year
+HAVING COUNT(*) > 5;
+```
 
 ### References
 - [Aggregate Fucntions Cheat Sheet](https://www.codecademy.com/learn/learn-sql/modules/learn-sql-aggregate-functions/cheatsheet)
