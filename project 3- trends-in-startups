@@ -1,5 +1,7 @@
 ### Trends in Startups
 
+My Gist for this project is also [here](https://gist.github.com/ceb892c570de5180df74cd12fc6870f3)
+
 --- Getting started, take a look at the startups table:
 SELECT *
 FROM startups;
