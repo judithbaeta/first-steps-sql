@@ -6,7 +6,6 @@ Judith here, I have been wanting to learn programming for a while and now that I
 
 Data science is about story telling and making sense of numbers. I aspire to become a social data scientist to contribute to a sustaibable future!🌱
 
--------------------------------------------------------------------------------------------------------
 # Resources
 
 I'm currently completing the [Learn SQL course form Codeacademy](https://www.codecademy.com/learn/learn-sql) and it has good resources to get started. The coursework is divided in four main lessons and practical projects for each:
