@@ -1,13 +1,15 @@
-# first-steps
-My first ever project.
+# My first project!
 
 Hi there!
 
-Judith here, I have been wanting to learn programming for a while and now that I'm in isolation due to #covid-19 pandemic/crisis I thought it would be a good time to get to it. Jokes on me, I just quit my FT job and was supposed to be travelling aroud the SE Asia but instead here I am. 
+Judith here, I have been wanting to learn programming for a while and now that I'm in isolation due to #covid-19 pandemic/crisis I thought it would be a good time to get to it. Jokes on me, I just quit my FT job in Australia and was supposed to be travelling aroud the SE Asia but instead here I am, back at home. 
 
-I'm interested in becoming a data scientist and this should be fun!
+Data science is about story telling and making sense of numbers. I aspire to become a social data scientist to contribute to a sustaibable future!🌱
 
-I'm currently completing the [Learn SQL course form Codeacademy](https://www.codecademy.com/learn/learn-sql) and it has really good resources to get started. It divides the coursework in four main lessons as follow:
+-------------------------------------------------------------------------------------------------------
+# Resources
+
+I'm currently completing the [Learn SQL course form Codeacademy](https://www.codecademy.com/learn/learn-sql) and it has good resources to get started. The coursework is divided in four main lessons and practical projects for each:
 1. Manipulation
 2. Queries
 3. Aggregate Functions
